@@ -13,75 +13,48 @@ public abstract class Enemy : MonoBehaviour
     [SerializeField] GameObject enemyProjectile;
     GameManager gameManager;
 
- 
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+     void Start()
+    {    
         leftSwing = true;
         swingTimer = 0;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     protected void EnemySwing()
     {
-
         swingTimer += Time.deltaTime;
         if (swingTimer >= 5)    //Direction changes in every one second
         {
             leftSwing = !leftSwing;
             swingTimer = 0;
-
         }
 
         if (leftSwing)
-        {
             gameObject.transform.Translate(Vector3.left * Time.deltaTime *  swingSpeed);
-
-            
-        }
-        else
-        {
+    
+        
+        else       
             gameObject.transform.Translate(Vector3.right * Time.deltaTime * swingSpeed);
-
-
-        }
-
 
     }
 
     public void Fire()
     {
         Instantiate(enemyProjectile, transform.position, enemyProjectile.transform.rotation);
-
     }
 
     public void TakeDamage()
     {
         gameManager = GameObject.Find("GameHandler").GetComponent<GameManager>();
-        gameManager.PlayHit();
-        Debug.Log(gameObject.name + "GOT SHOT!!");
-        
+        gameManager.PlayHit();        
         health--;
         if (health == 0) //Plane is dead
         {
             gameManager.enemyList.Remove(gameObject); //Remove from the enemies list
             Destroy(gameObject); //Destroy the plane
-
             if(gameManager.enemyList.Count == 0)
             {
                 gameManager.GameWon();
             }
-
         }
-
     }
-
 }

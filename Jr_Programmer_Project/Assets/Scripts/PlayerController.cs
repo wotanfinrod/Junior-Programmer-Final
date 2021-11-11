@@ -8,28 +8,20 @@ public class PlayerController : MonoBehaviour
     const int playerRightBound = 53;
 
     [SerializeField] GameObject playerProjectile;
-
     [SerializeField] AudioClip fireSFX;
     AudioSource audioSource;
 
 
-    // Start is called before the first frame update
     void Start()
     {
-        audioSource = gameObject.GetComponent<AudioSource>();
-        
+        audioSource = gameObject.GetComponent<AudioSource>(); 
     }
 
-    // Update is called once per frame
     void Update()
     {
         MovePlayer();
         Fire();
-
-
     }
-
-
 
     void MovePlayer()
     {
@@ -52,7 +44,4 @@ public class PlayerController : MonoBehaviour
         }
 
     }
-
-
-
 }

@@ -24,7 +24,6 @@ public class GameManager : MonoBehaviour
 
     AudioSource audioSource;
 
-    // Start is called before the first frame update
     void Start()
     {
         isGameOver = false;
@@ -32,14 +31,7 @@ public class GameManager : MonoBehaviour
         lifeList = new List<GameObject>(GameObject.FindGameObjectsWithTag("Heart"));
 
         audioSource = gameObject.GetComponent<AudioSource>();
-
         StartCoroutine(EnemyFire());
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     IEnumerator EnemyFire()
@@ -57,16 +49,13 @@ public class GameManager : MonoBehaviour
 
             }       
         }
-
     }
 
     public void DecreasePlayerLife()
     {
         lifeList[lifeList.Count - 1].SetActive(false);
         lifeList.RemoveAt(lifeList.Count - 1);
-
         if (lifeList.Count == 0) GameOver();
-
     }
 
     void GameOver()
@@ -75,9 +64,7 @@ public class GameManager : MonoBehaviour
         audioSource.PlayOneShot(gameOverSFX);
         gameOverButton.SetActive(true);
         gameOverText.SetActive(true);
-
-        GameObject.Destroy(GameObject.Find("PlayerPlane"));
-        
+        GameObject.Destroy(GameObject.Find("PlayerPlane"));      
     }
 
     public void GameWon()
@@ -89,8 +76,7 @@ public class GameManager : MonoBehaviour
     }
 
     public void PlayAgain()
-    {
-        
+    {      
         SceneManager.LoadScene(0);
     }
 

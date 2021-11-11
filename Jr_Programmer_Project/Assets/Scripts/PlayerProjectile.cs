@@ -6,20 +6,16 @@ public class PlayerProjectile : Projectile
 {
     bool isUsed;
 
-    // Start is called before the first frame update
     void Start()
     {
         isUsed = false;
         speed = 50;
     }
 
-    // Update is called once per frame
     void Update()
     {
         Move();
         CheckBounds();
-
-     
     }
 
     protected override void DealDamage(GameObject planeGetShot)
@@ -30,8 +26,6 @@ public class PlayerProjectile : Projectile
 
     private void OnCollisionEnter(Collision collision)
     {
-
-
         GameObject enemyGotHit = collision.transform.parent.parent.gameObject;
         if (enemyGotHit.CompareTag("Enemy") && !isUsed)
         {
@@ -39,8 +33,5 @@ public class PlayerProjectile : Projectile
             DealDamage(enemyGotHit);
         }
         
-
     }
-
-
 }

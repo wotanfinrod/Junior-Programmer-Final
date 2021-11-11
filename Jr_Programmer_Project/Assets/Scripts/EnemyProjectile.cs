@@ -39,7 +39,6 @@ public class EnemyProjectile : Projectile
         GameObject planeGotHit = other.transform.parent.parent.gameObject;
         if (planeGotHit.CompareTag("Player") && !isTriggered)
         {
-
             isTriggered = true;
             Destroy(gameObject);
             DealDamage(planeGotHit);
