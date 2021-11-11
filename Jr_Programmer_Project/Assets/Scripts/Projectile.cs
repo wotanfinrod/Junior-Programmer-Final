@@ -27,7 +27,7 @@ public abstract class Projectile : MonoBehaviour
         }
     }
 
-    protected abstract void DealDamage(GameObject enemyGetShot);
+    protected abstract void DealDamage(GameObject planeGetShot);
 
     
 

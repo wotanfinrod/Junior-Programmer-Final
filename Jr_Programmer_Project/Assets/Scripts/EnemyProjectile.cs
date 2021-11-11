@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class EnemyProjectile : Projectile
 {
+    GameManager gameManager;
+
+    bool isTriggered; //To prevent triggering twice
+
     // Start is called before the first frame update
     void Start()
     {
         speed = -50;
+        isTriggered = false;
     }
 
     // Update is called once per frame
@@ -17,8 +22,28 @@ public class EnemyProjectile : Projectile
         CheckBounds();
     }
 
-    protected override void DealDamage(GameObject enemyGetShot)
+    protected override void DealDamage(GameObject playerGetShot)
     {
-        throw new System.NotImplementedException();
+         //Bullet is gone
+        Debug.Log("PLAYER GOT HIT");
+        gameManager = GameObject.Find("GameHandler").GetComponent<GameManager>();
+        gameManager.DecreasePlayerLife();
+
     }
+
+    
+
+    private void OnTriggerEnter(Collider other)
+    {
+        GameObject planeGotHit = other.transform.parent.parent.gameObject;
+        if (planeGotHit.CompareTag("Player") && !isTriggered)
+        {
+            isTriggered = true;
+            Destroy(gameObject);
+            DealDamage(planeGotHit);
+        }
+    }
+
+
+
 }

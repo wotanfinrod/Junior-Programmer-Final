@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - EnemyParent
   - GameManager
+  - Heart
   layers:
   - Default
   - TransparentFX

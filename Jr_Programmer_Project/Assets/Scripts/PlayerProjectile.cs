@@ -19,10 +19,10 @@ public class PlayerProjectile : Projectile
      
     }
 
-    protected override void DealDamage(GameObject enemyGetShot)
+    protected override void DealDamage(GameObject planeGetShot)
     {
         Destroy(gameObject);
-        enemyGetShot.GetComponent<Enemy>().TakeDamage();
+        planeGetShot.GetComponent<Enemy>().TakeDamage();
     }
 
     private void OnCollisionEnter(Collision collision)

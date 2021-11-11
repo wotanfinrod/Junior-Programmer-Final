@@ -1,17 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     const float enemyFireInterval = 1.5f;
 
     public List<GameObject> enemyList;
+    public List<GameObject> lifeList;
+
+    [SerializeField] GameObject gameOverButton;
+    [SerializeField] GameObject gameOverText;
 
     // Start is called before the first frame update
     void Start()
     {
         enemyList = new List<GameObject>(GameObject.FindGameObjectsWithTag("Enemy"));
+        lifeList = new List<GameObject>(GameObject.FindGameObjectsWithTag("Heart"));
+
         StartCoroutine(EnemyFire());
     }
 
@@ -33,18 +41,33 @@ public class GameManager : MonoBehaviour
                 int selectedEnemy = Random.Range(0, enemyList.Count);
                 enemyList[selectedEnemy].GetComponent<Enemy>().Fire();
 
-            }
-
-
-            //int selectedEnemy = Random.Range(0, enemyList.Count);
-      //  int selectedEnemy2 = Random.Range(0, enemyList.Count);
-      //  enemyList[selectedEnemy].GetComponent<Enemy>().Fire();
-       
-        
-        
-        
-        
+            }       
         }
 
     }
+
+    public void DecreasePlayerLife()
+    {
+        lifeList[lifeList.Count - 1].SetActive(false);
+        lifeList.RemoveAt(lifeList.Count - 1);
+
+        if (lifeList.Count == 0) GameOver();
+
+    }
+
+    void GameOver()
+    {
+        gameOverButton.SetActive(true);
+        gameOverText.SetActive(true);
+
+        GameObject.Destroy(GameObject.Find("PlayerPlane"));
+        
+    }
+
+    public void PlayAgain()
+    {
+        
+        SceneManager.LoadScene(0);
+    }
+
 }
