@@ -5,8 +5,8 @@ using UnityEngine;
 public abstract class Projectile : MonoBehaviour
 {
 
-    const int upperBound = 35;
-    const int lowerBound = -10;
+    const float upperBound = 35f;
+    const float lowerBound = -20f;
 
      protected int speed;
 
@@ -21,18 +21,14 @@ public abstract class Projectile : MonoBehaviour
 
     protected void CheckBounds()
     {
-        if(transform.position.y > upperBound && transform.position.y < lowerBound)
+        if(transform.position.y > upperBound || transform.position.y < lowerBound)
         {
             Destroy(gameObject);
         }
     }
 
 
-    protected void CheckBound()
-    {
-
-    }
-    
+ 
 
 
 }

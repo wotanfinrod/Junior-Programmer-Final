@@ -130,9 +130,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 490134739}
     m_Modifications:
+    - target: {fileID: 501560068592174252, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
+      propertyPath: enemyProjectile
+      value: 
+      objectReference: {fileID: 6700174903115054029, guid: d2e61b4af719d2841addc0d2c3112364, type: 3}
     - target: {fileID: 8189345167250692128, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
       propertyPath: m_Name
       value: BlueShip (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189345167250692128, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8857936870478856858, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
       propertyPath: m_RootOrder
@@ -296,9 +304,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 490134739}
     m_Modifications:
+    - target: {fileID: 501560068592174252, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
+      propertyPath: enemyProjectile
+      value: 
+      objectReference: {fileID: 6700174903115054029, guid: d2e61b4af719d2841addc0d2c3112364, type: 3}
     - target: {fileID: 8189345167250692128, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
       propertyPath: m_Name
       value: BlueShip (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189345167250692128, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8857936870478856858, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
       propertyPath: m_RootOrder
@@ -359,6 +375,49 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8857936870478856858, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
   m_PrefabInstance: {fileID: 281899981}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &379097584
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 379097585}
+  - component: {fileID: 379097586}
+  m_Layer: 0
+  m_Name: GameHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &379097585
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379097584}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.76845497, y: 4.9091387, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &379097586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379097584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43942a92fbbbdd24dbf9ebc290454334, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &398564850
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -366,9 +425,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 490134739}
     m_Modifications:
+    - target: {fileID: 501560068592174252, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
+      propertyPath: enemyProjectile
+      value: 
+      objectReference: {fileID: 6700174903115054029, guid: d2e61b4af719d2841addc0d2c3112364, type: 3}
     - target: {fileID: 8189345167250692128, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
       propertyPath: m_Name
       value: BlueShip (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189345167250692128, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8857936870478856858, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
       propertyPath: m_RootOrder
@@ -436,9 +503,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1343031554}
     m_Modifications:
+    - target: {fileID: 4094477377217435129, guid: e893c7442e9d5724eb7f72bb9f3fecd7, type: 3}
+      propertyPath: enemyProjectile
+      value: 
+      objectReference: {fileID: 6700174903115054029, guid: d2e61b4af719d2841addc0d2c3112364, type: 3}
     - target: {fileID: 4131006180352084946, guid: e893c7442e9d5724eb7f72bb9f3fecd7, type: 3}
       propertyPath: m_Name
       value: WhiteShip (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4131006180352084946, guid: e893c7442e9d5724eb7f72bb9f3fecd7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4133328899722556878, guid: e893c7442e9d5724eb7f72bb9f3fecd7, type: 3}
       propertyPath: m_RootOrder
@@ -553,9 +628,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 490134739}
     m_Modifications:
+    - target: {fileID: 501560068592174252, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
+      propertyPath: enemyProjectile
+      value: 
+      objectReference: {fileID: 6700174903115054029, guid: d2e61b4af719d2841addc0d2c3112364, type: 3}
     - target: {fileID: 8189345167250692128, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
       propertyPath: m_Name
       value: BlueShip (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189345167250692128, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8857936870478856858, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
       propertyPath: m_RootOrder
@@ -623,9 +706,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 490134739}
     m_Modifications:
+    - target: {fileID: 501560068592174252, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
+      propertyPath: enemyProjectile
+      value: 
+      objectReference: {fileID: 6700174903115054029, guid: d2e61b4af719d2841addc0d2c3112364, type: 3}
     - target: {fileID: 8189345167250692128, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
       propertyPath: m_Name
       value: BlueShip (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189345167250692128, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8857936870478856858, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
       propertyPath: m_RootOrder
@@ -753,6 +844,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedShip (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2123518155560713096, guid: 88a6535d8473eea43b88306217b9d9a6, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3809600189383783786, guid: 88a6535d8473eea43b88306217b9d9a6, type: 3}
+      propertyPath: enemyProjectile
+      value: 
+      objectReference: {fileID: 6700174903115054029, guid: d2e61b4af719d2841addc0d2c3112364, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88a6535d8473eea43b88306217b9d9a6, type: 3}
 --- !u!4 &662931023 stripped
@@ -860,9 +959,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1343031554}
     m_Modifications:
+    - target: {fileID: 4094477377217435129, guid: e893c7442e9d5724eb7f72bb9f3fecd7, type: 3}
+      propertyPath: enemyProjectile
+      value: 
+      objectReference: {fileID: 6700174903115054029, guid: d2e61b4af719d2841addc0d2c3112364, type: 3}
     - target: {fileID: 4131006180352084946, guid: e893c7442e9d5724eb7f72bb9f3fecd7, type: 3}
       propertyPath: m_Name
       value: WhiteShip (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4131006180352084946, guid: e893c7442e9d5724eb7f72bb9f3fecd7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4133328899722556878, guid: e893c7442e9d5724eb7f72bb9f3fecd7, type: 3}
       propertyPath: m_RootOrder
@@ -934,9 +1041,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 490134739}
     m_Modifications:
+    - target: {fileID: 501560068592174252, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
+      propertyPath: enemyProjectile
+      value: 
+      objectReference: {fileID: 6700174903115054029, guid: d2e61b4af719d2841addc0d2c3112364, type: 3}
     - target: {fileID: 8189345167250692128, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
       propertyPath: m_Name
       value: BlueShip (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189345167250692128, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8857936870478856858, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
       propertyPath: m_RootOrder
@@ -1004,9 +1119,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 490134739}
     m_Modifications:
+    - target: {fileID: 501560068592174252, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
+      propertyPath: enemyProjectile
+      value: 
+      objectReference: {fileID: 6700174903115054029, guid: d2e61b4af719d2841addc0d2c3112364, type: 3}
     - target: {fileID: 8189345167250692128, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
       propertyPath: m_Name
       value: BlueShip (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189345167250692128, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8857936870478856858, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
       propertyPath: m_RootOrder
@@ -1109,9 +1232,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 490134739}
     m_Modifications:
+    - target: {fileID: 501560068592174252, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
+      propertyPath: enemyProjectile
+      value: 
+      objectReference: {fileID: 6700174903115054029, guid: d2e61b4af719d2841addc0d2c3112364, type: 3}
     - target: {fileID: 8189345167250692128, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
       propertyPath: m_Name
       value: BlueShip (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189345167250692128, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8857936870478856858, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
       propertyPath: m_RootOrder
@@ -1340,6 +1471,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedShip (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2123518155560713096, guid: 88a6535d8473eea43b88306217b9d9a6, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3809600189383783786, guid: 88a6535d8473eea43b88306217b9d9a6, type: 3}
+      propertyPath: enemyProjectile
+      value: 
+      objectReference: {fileID: 6700174903115054029, guid: d2e61b4af719d2841addc0d2c3112364, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88a6535d8473eea43b88306217b9d9a6, type: 3}
 --- !u!4 &1028485359 stripped
@@ -1354,9 +1493,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 490134739}
     m_Modifications:
+    - target: {fileID: 501560068592174252, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
+      propertyPath: enemyProjectile
+      value: 
+      objectReference: {fileID: 6700174903115054029, guid: d2e61b4af719d2841addc0d2c3112364, type: 3}
     - target: {fileID: 8189345167250692128, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
       propertyPath: m_Name
       value: BlueShip (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189345167250692128, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8857936870478856858, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
       propertyPath: m_RootOrder
@@ -1484,6 +1631,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedShip (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2123518155560713096, guid: 88a6535d8473eea43b88306217b9d9a6, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3809600189383783786, guid: 88a6535d8473eea43b88306217b9d9a6, type: 3}
+      propertyPath: enemyProjectile
+      value: 
+      objectReference: {fileID: 6700174903115054029, guid: d2e61b4af719d2841addc0d2c3112364, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88a6535d8473eea43b88306217b9d9a6, type: 3}
 --- !u!4 &1286114798 stripped
@@ -1533,9 +1688,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1343031554}
     m_Modifications:
+    - target: {fileID: 4094477377217435129, guid: e893c7442e9d5724eb7f72bb9f3fecd7, type: 3}
+      propertyPath: enemyProjectile
+      value: 
+      objectReference: {fileID: 6700174903115054029, guid: d2e61b4af719d2841addc0d2c3112364, type: 3}
     - target: {fileID: 4131006180352084946, guid: e893c7442e9d5724eb7f72bb9f3fecd7, type: 3}
       propertyPath: m_Name
       value: WhiteShip (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4131006180352084946, guid: e893c7442e9d5724eb7f72bb9f3fecd7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4133328899722556878, guid: e893c7442e9d5724eb7f72bb9f3fecd7, type: 3}
       propertyPath: m_RootOrder
@@ -1607,9 +1770,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 490134739}
     m_Modifications:
+    - target: {fileID: 501560068592174252, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
+      propertyPath: enemyProjectile
+      value: 
+      objectReference: {fileID: 6700174903115054029, guid: d2e61b4af719d2841addc0d2c3112364, type: 3}
     - target: {fileID: 8189345167250692128, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
       propertyPath: m_Name
       value: BlueShip (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189345167250692128, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8857936870478856858, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
       propertyPath: m_RootOrder
@@ -1682,18 +1853,6 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2121674192643539240, guid: 88a6535d8473eea43b88306217b9d9a6, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.69999987
-      objectReference: {fileID: 0}
-    - target: {fileID: 2121674192643539240, guid: 88a6535d8473eea43b88306217b9d9a6, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.6999998
-      objectReference: {fileID: 0}
-    - target: {fileID: 2121674192643539240, guid: 88a6535d8473eea43b88306217b9d9a6, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.6999998
-      objectReference: {fileID: 0}
-    - target: {fileID: 2121674192643539240, guid: 88a6535d8473eea43b88306217b9d9a6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.179998
       objectReference: {fileID: 0}
@@ -1737,6 +1896,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedShip (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2123518155560713096, guid: 88a6535d8473eea43b88306217b9d9a6, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3809600189383783786, guid: 88a6535d8473eea43b88306217b9d9a6, type: 3}
+      propertyPath: enemyProjectile
+      value: 
+      objectReference: {fileID: 6700174903115054029, guid: d2e61b4af719d2841addc0d2c3112364, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88a6535d8473eea43b88306217b9d9a6, type: 3}
 --- !u!4 &1649207980 stripped
@@ -1768,7 +1935,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1782326824}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5, y: 5.88, z: -47}
+  m_LocalPosition: {x: 18.94, y: 5.88, z: -47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 490134739}
@@ -1784,9 +1951,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1343031554}
     m_Modifications:
+    - target: {fileID: 4094477377217435129, guid: e893c7442e9d5724eb7f72bb9f3fecd7, type: 3}
+      propertyPath: enemyProjectile
+      value: 
+      objectReference: {fileID: 6700174903115054029, guid: d2e61b4af719d2841addc0d2c3112364, type: 3}
     - target: {fileID: 4131006180352084946, guid: e893c7442e9d5724eb7f72bb9f3fecd7, type: 3}
       propertyPath: m_Name
       value: WhiteShip (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4131006180352084946, guid: e893c7442e9d5724eb7f72bb9f3fecd7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4133328899722556878, guid: e893c7442e9d5724eb7f72bb9f3fecd7, type: 3}
       propertyPath: m_RootOrder
@@ -1858,9 +2033,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 490134739}
     m_Modifications:
+    - target: {fileID: 501560068592174252, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
+      propertyPath: enemyProjectile
+      value: 
+      objectReference: {fileID: 6700174903115054029, guid: d2e61b4af719d2841addc0d2c3112364, type: 3}
     - target: {fileID: 8189345167250692128, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
       propertyPath: m_Name
       value: BlueShip (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189345167250692128, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8857936870478856858, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
       propertyPath: m_RootOrder
@@ -1928,9 +2111,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 490134739}
     m_Modifications:
+    - target: {fileID: 501560068592174252, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
+      propertyPath: enemyProjectile
+      value: 
+      objectReference: {fileID: 6700174903115054029, guid: d2e61b4af719d2841addc0d2c3112364, type: 3}
     - target: {fileID: 8189345167250692128, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
       propertyPath: m_Name
       value: BlueShip (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189345167250692128, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8857936870478856858, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
       propertyPath: m_RootOrder
@@ -2068,6 +2259,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedShip
       objectReference: {fileID: 0}
+    - target: {fileID: 2123518155560713096, guid: 88a6535d8473eea43b88306217b9d9a6, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3809600189383783786, guid: 88a6535d8473eea43b88306217b9d9a6, type: 3}
+      propertyPath: enemyProjectile
+      value: 
+      objectReference: {fileID: 6700174903115054029, guid: d2e61b4af719d2841addc0d2c3112364, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88a6535d8473eea43b88306217b9d9a6, type: 3}
 --- !u!1001 &4893280833523507676
@@ -2077,25 +2276,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1343031554}
     m_Modifications:
+    - target: {fileID: 4094477377217435129, guid: e893c7442e9d5724eb7f72bb9f3fecd7, type: 3}
+      propertyPath: enemyProjectile
+      value: 
+      objectReference: {fileID: 6700174903115054029, guid: d2e61b4af719d2841addc0d2c3112364, type: 3}
     - target: {fileID: 4131006180352084946, guid: e893c7442e9d5724eb7f72bb9f3fecd7, type: 3}
       propertyPath: m_Name
       value: WhiteShip
       objectReference: {fileID: 0}
+    - target: {fileID: 4131006180352084946, guid: e893c7442e9d5724eb7f72bb9f3fecd7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 4133328899722556878, guid: e893c7442e9d5724eb7f72bb9f3fecd7, type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4133328899722556878, guid: e893c7442e9d5724eb7f72bb9f3fecd7, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4133328899722556878, guid: e893c7442e9d5724eb7f72bb9f3fecd7, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4133328899722556878, guid: e893c7442e9d5724eb7f72bb9f3fecd7, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 4133328899722556878, guid: e893c7442e9d5724eb7f72bb9f3fecd7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2146,21 +2341,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 490134739}
     m_Modifications:
+    - target: {fileID: 501560068592174252, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
+      propertyPath: enemyProjectile
+      value: 
+      objectReference: {fileID: 6700174903115054029, guid: d2e61b4af719d2841addc0d2c3112364, type: 3}
     - target: {fileID: 8189345167250692128, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
       propertyPath: m_Name
       value: BlueShip
       objectReference: {fileID: 0}
+    - target: {fileID: 8189345167250692128, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 8857936870478856858, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8857936870478856858, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.39999995
-      objectReference: {fileID: 0}
-    - target: {fileID: 8857936870478856858, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.40000007
       objectReference: {fileID: 0}
     - target: {fileID: 8857936870478856858, guid: d90ccc252916bd94f9e1160cbe3bbf66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2270,6 +2465,10 @@ PrefabInstance:
     - target: {fileID: 3241837202515187836, guid: 626f585dc8570a946b4f40ff7241ebc9, type: 3}
       propertyPath: m_Name
       value: PlayerPlane
+      objectReference: {fileID: 0}
+    - target: {fileID: 3241837202515187836, guid: 626f585dc8570a946b4f40ff7241ebc9, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 626f585dc8570a946b4f40ff7241ebc9, type: 3}

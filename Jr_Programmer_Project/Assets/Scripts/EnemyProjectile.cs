@@ -14,5 +14,6 @@ public class EnemyProjectile : Projectile
     void Update()
     {
         Move();
+        CheckBounds();
     }
 }

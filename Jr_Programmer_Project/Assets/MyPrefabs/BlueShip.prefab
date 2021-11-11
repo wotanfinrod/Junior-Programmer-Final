@@ -267,6 +267,7 @@ GameObject:
   - component: {fileID: 8857936870478856858}
   - component: {fileID: 5567132158309780799}
   - component: {fileID: 7684999664334387701}
+  - component: {fileID: 501560068592174252}
   m_Layer: 0
   m_Name: BlueShip
   m_TagString: Untagged
@@ -281,9 +282,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8189345167250692128}
-  m_LocalRotation: {x: -0.030048028, y: -0.7064679, z: 0.70639396, w: -0.031746484}
+  m_LocalRotation: {x: -0.030054599, y: -0.7064677, z: 0.70639455, w: -0.03173134}
   m_LocalPosition: {x: 4.505762, y: 11.929126, z: -1.5012856}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalScale: {x: 0.39999995, y: 0.40000007, z: 0.4}
   m_Children:
   - {fileID: 1714368088196474220}
   m_Father: {fileID: 0}
@@ -338,3 +339,15 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &501560068592174252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8189345167250692128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30a134d83f060de4a934980a64bc564f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
