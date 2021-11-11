@@ -166,7 +166,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.45, y: 0.28, z: 2.23}
+  m_Size: {x: 3.45, y: 2.46, z: 2.23}
   m_Center: {x: -1.67, y: -0.67, z: 1.46}
 --- !u!1 &6002451334337374582
 GameObject:
@@ -210,7 +210,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.45, y: 0.28, z: 2.23}
+  m_Size: {x: 3.45, y: 3.96, z: 2.23}
   m_Center: {x: 1.67, y: -0.67, z: 1.46}
 --- !u!1 &7628009573612791297
 GameObject:
@@ -351,3 +351,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30a134d83f060de4a934980a64bc564f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyProjectile: {fileID: 0}

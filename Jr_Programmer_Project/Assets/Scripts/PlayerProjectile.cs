@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class PlayerProjectile : Projectile
 {
+    bool isUsed;
+
     // Start is called before the first frame update
     void Start()
     {
+        isUsed = false;
         speed = 50;
     }
 
@@ -27,9 +30,12 @@ public class PlayerProjectile : Projectile
 
     private void OnCollisionEnter(Collision collision)
     {
+
+
         GameObject enemyGotHit = collision.transform.parent.parent.gameObject;
-        if (enemyGotHit.CompareTag("Enemy"))
+        if (enemyGotHit.CompareTag("Enemy") && !isUsed)
         {
+            isUsed = true;
             DealDamage(enemyGotHit);
         }
         

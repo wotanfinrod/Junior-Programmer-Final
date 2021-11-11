@@ -13,11 +13,13 @@ public abstract class Enemy : MonoBehaviour
     [SerializeField] GameObject enemyProjectile;
     GameManager gameManager;
 
+ 
+
 
     // Start is called before the first frame update
     void Start()
     {
-
+        
         leftSwing = true;
         swingTimer = 0;
     }
@@ -63,13 +65,20 @@ public abstract class Enemy : MonoBehaviour
 
     public void TakeDamage()
     {
+        gameManager = GameObject.Find("GameHandler").GetComponent<GameManager>();
+        gameManager.PlayHit();
         Debug.Log(gameObject.name + "GOT SHOT!!");
+        
         health--;
         if (health == 0) //Plane is dead
         {
-            gameManager = GameObject.Find("GameHandler").GetComponent<GameManager>();
             gameManager.enemyList.Remove(gameObject); //Remove from the enemies list
             Destroy(gameObject); //Destroy the plane
+
+            if(gameManager.enemyList.Count == 0)
+            {
+                gameManager.GameWon();
+            }
 
         }
 

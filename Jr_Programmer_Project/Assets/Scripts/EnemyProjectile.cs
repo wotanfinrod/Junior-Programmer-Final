@@ -27,6 +27,7 @@ public class EnemyProjectile : Projectile
          //Bullet is gone
         Debug.Log("PLAYER GOT HIT");
         gameManager = GameObject.Find("GameHandler").GetComponent<GameManager>();
+        gameManager.PlayMinectaftOof();
         gameManager.DecreasePlayerLife();
 
     }
@@ -38,6 +39,7 @@ public class EnemyProjectile : Projectile
         GameObject planeGotHit = other.transform.parent.parent.gameObject;
         if (planeGotHit.CompareTag("Player") && !isTriggered)
         {
+
             isTriggered = true;
             Destroy(gameObject);
             DealDamage(planeGotHit);

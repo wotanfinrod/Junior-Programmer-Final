@@ -8,13 +8,15 @@ public class PlayerController : MonoBehaviour
     const int playerRightBound = 53;
 
     [SerializeField] GameObject playerProjectile;
-    
+
+    [SerializeField] AudioClip fireSFX;
+    AudioSource audioSource;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioSource = gameObject.GetComponent<AudioSource>();
         
     }
 
@@ -45,6 +47,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            audioSource.PlayOneShot(fireSFX);
             Instantiate(playerProjectile, transform.position, playerProjectile.transform.rotation);
         }
 
