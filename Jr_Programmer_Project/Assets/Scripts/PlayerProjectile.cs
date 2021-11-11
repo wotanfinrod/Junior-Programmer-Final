@@ -17,7 +17,24 @@ public class PlayerProjectile : Projectile
         CheckBounds();
 
      
-}
+    }
+
+    protected override void DealDamage(GameObject enemyGetShot)
+    {
+        Destroy(gameObject);
+        enemyGetShot.GetComponent<Enemy>().TakeDamage();
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        GameObject enemyGotHit = collision.transform.parent.parent.gameObject;
+        if (enemyGotHit.CompareTag("Enemy"))
+        {
+            DealDamage(enemyGotHit);
+        }
+        
+
+    }
 
 
 }

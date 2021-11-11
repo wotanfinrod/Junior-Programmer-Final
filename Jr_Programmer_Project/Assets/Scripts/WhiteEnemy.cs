@@ -7,7 +7,7 @@ public class WhiteEnemy : Enemy
     // Start is called before the first frame update
     void Start()
     {
-        
+        health = 3;
     }
 
     // Update is called once per frame

@@ -16,4 +16,9 @@ public class EnemyProjectile : Projectile
         Move();
         CheckBounds();
     }
+
+    protected override void DealDamage(GameObject enemyGetShot)
+    {
+        throw new System.NotImplementedException();
+    }
 }

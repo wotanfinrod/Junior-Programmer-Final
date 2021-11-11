@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     const float enemyFireInterval = 1.5f;
 
-    List<GameObject> enemyList;
+    public List<GameObject> enemyList;
 
     // Start is called before the first frame update
     void Start()
